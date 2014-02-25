@@ -1,0 +1,15 @@
+%% -*- erlang -*-
+%% vim: set filetype=erlang:
+
+{application, mandrill,
+ [
+  {description, ""},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { mandrill, []}},
+  {env, []}
+ ]}.

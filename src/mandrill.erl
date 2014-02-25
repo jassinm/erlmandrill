@@ -64,6 +64,6 @@ mandrill_call(MUrl, Params) ->
     case httpc:request(post, Request, [], []) of
         {ok, {{"HTTP/1.1", 200, "OK"}, _, Content}} ->
             {ok, jiffy:decode(Content)};
-        _ ->
-            {error, "Call to mandrill failed"}
+        Error ->
+            {error, "Call to mandrill failed, ~p", [Error]}
     end.
