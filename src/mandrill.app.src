@@ -10,6 +10,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { mandrill, []}},
+  %%{mod, { mandrill, []}},
   {env, []}
  ]}.
